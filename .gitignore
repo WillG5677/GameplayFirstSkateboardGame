@@ -10,6 +10,14 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 
+SkateboardGame/[Ll]ibrary/
+SkateboardGame/[Tt]emp/
+SkateboardGame/[Oo]bj/
+SkateboardGame/[Bb]uild/
+SkateboardGame/[Bb]uilds/
+SkateboardGame/[Ll]ogs/
+SkateboardGame/[Uu]ser[Ss]ettings/
+
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
@@ -75,4 +83,3 @@ crashlytics-build.properties
 SkateboardGame/Temp/FSTimeGet-21ed7904624b55e4b99cabe29ee2ba83
 SkateboardGame/Temp/UnityLockfile
 SkateboardGame/Temp/workerlic
-SkateboardGame/Temp/
