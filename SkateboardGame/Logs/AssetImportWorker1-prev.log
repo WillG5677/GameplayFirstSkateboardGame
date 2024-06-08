@@ -1,0 +1,1382 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.31f1 (4ede2d13e8b4) revision 5168685'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 8029 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.31f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+D:/GameplayFirstSkateboardGame/SkateboardGame
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+62587
+Successfully changed project path to: D:/GameplayFirstSkateboardGame/SkateboardGame
+D:/GameplayFirstSkateboardGame/SkateboardGame
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [21028] Host "[IP] 192.168.4.65 [Port] 0 [Flags] 2 [Guid] 2175879628 [EditorId] 2175879628 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-9CMP7N6D) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [21028] Host "[IP] 192.168.4.65 [Port] 0 [Flags] 2 [Guid] 2175879628 [EditorId] 2175879628 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-9CMP7N6D) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+Refreshing native plugins compatible for Editor in 222.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.31f1 (4ede2d13e8b4)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/GameplayFirstSkateboardGame/SkateboardGame/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 Ti (ID=0x1f95)
+    Vendor:   NVIDIA
+    VRAM:     3949 MB
+    Driver:   31.0.15.3699
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56944
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.011316 seconds.
+- Loaded All Assemblies, in  0.540 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.430 seconds
+Domain Reload Profiling: 968ms
+	BeginReloadAssembly (195ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (77ms)
+	LoadAllAssembliesAndSetupDomain (209ms)
+		LoadAssemblies (192ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (206ms)
+			TypeCache.Refresh (204ms)
+				TypeCache.ScanAssembly (184ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (430ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (352ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (13ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (234ms)
+			ProcessInitializeOnLoadMethodAttributes (86ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.708 seconds
+Refreshing native plugins compatible for Editor in 19.71 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.891 seconds
+Domain Reload Profiling: 2596ms
+	BeginReloadAssembly (225ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (54ms)
+	LoadAllAssembliesAndSetupDomain (1372ms)
+		LoadAssemblies (1233ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (280ms)
+			TypeCache.Refresh (250ms)
+				TypeCache.ScanAssembly (223ms)
+			ScanForSourceGeneratedMonoScriptInfo (21ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (892ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (675ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (77ms)
+			ProcessInitializeOnLoadAttributes (523ms)
+			ProcessInitializeOnLoadMethodAttributes (49ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 3.37 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3217 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 40 unused Assets / (57.6 KB). Loaded Objects now: 3681.
+Memory consumption went from 121.4 MB to 121.3 MB.
+Total: 5.629100 ms (FindLiveObjects: 0.811200 ms CreateObjectMapping: 0.316600 ms MarkObjects: 4.316800 ms  DeleteObjects: 0.182900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1961995.190008 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_002.png
+  artifactKey: Guid(0eb58f53979dd3343a2a5c63c40c82bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_002.png using Guid(0eb58f53979dd3343a2a5c63c40c82bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a3df666172c7ef8856974e25fafeda68') in 0.298617 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_050.png
+  artifactKey: Guid(26dbf59ca3133ea439acb9c54a7ff9ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_050.png using Guid(26dbf59ca3133ea439acb9c54a7ff9ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7cebac2592426e7e56992921747195cc') in 0.320779 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_023.png
+  artifactKey: Guid(115d509099f281c40bc665f63c3a0615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_023.png using Guid(115d509099f281c40bc665f63c3a0615) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '442da18a487eb1dc61baf4c0ec0292d8') in 0.094172 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_032.png
+  artifactKey: Guid(d733c4b3f2a880b429ece4e26ad1e368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_032.png using Guid(d733c4b3f2a880b429ece4e26ad1e368) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2d871cd199904fdc9da56ee2a0238b21') in 0.023561 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_037.png
+  artifactKey: Guid(d807fb8436534ae40a8ce7108ccb6367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_037.png using Guid(d807fb8436534ae40a8ce7108ccb6367) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8a4d70e12f8fd43e0b32a33f11feb210') in 0.337529 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_052.png
+  artifactKey: Guid(f12a591644d1d2049bba3340db231847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_052.png using Guid(f12a591644d1d2049bba3340db231847) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6c58a4902bd1f4fc6aa74430a33a0a18') in 0.149921 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_033.png
+  artifactKey: Guid(df1c1b57043d6f640a113588e90b581d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_033.png using Guid(df1c1b57043d6f640a113588e90b581d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b3badb490d05509682221ca35c6f2946') in 0.050339 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_012.png
+  artifactKey: Guid(ff03ab058cee0b64db14a84c3464a931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_012.png using Guid(ff03ab058cee0b64db14a84c3464a931) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8622cc6807ecc958525eee6bad4c343f') in 0.029364 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_015.png
+  artifactKey: Guid(d007609ebd31efb41b3c3dfacf607391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_015.png using Guid(d007609ebd31efb41b3c3dfacf607391) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8500373918007baf74c49e9f59972277') in 0.063585 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_049.png
+  artifactKey: Guid(5d6f85c92207b5740a23d22f65fea7e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_049.png using Guid(5d6f85c92207b5740a23d22f65fea7e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3d82124e5be82c1d608cbd78e46a59f6') in 0.025782 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_010.png
+  artifactKey: Guid(36553b8848a10ab49bb5a9564f06a484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_010.png using Guid(36553b8848a10ab49bb5a9564f06a484) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '44fb95cf67e64b72c155cf4e234cf592') in 0.105325 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_042.png
+  artifactKey: Guid(ca0fa2221666a8848bea1fd1d860af5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_042.png using Guid(ca0fa2221666a8848bea1fd1d860af5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '5d699f36daa04df2b2ce6f5f48dedab9') in 0.019814 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_043.png
+  artifactKey: Guid(58eb0a38ebac4ae4ca5d5e4d5dde4a45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_043.png using Guid(58eb0a38ebac4ae4ca5d5e4d5dde4a45) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b19ee5dbac13f5bc5b0d26faf146be41') in 0.017176 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_016.png
+  artifactKey: Guid(0adf8c42acf677749941e093592f1567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_016.png using Guid(0adf8c42acf677749941e093592f1567) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8cb6cca6a28ad5429fb8f7cff9a825b4') in 0.312667 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_013.png
+  artifactKey: Guid(ee51cbdd1a1062b40a45b65f62acbc04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_013.png using Guid(ee51cbdd1a1062b40a45b65f62acbc04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '60db489eaa51aed0c67205bac696dca5') in 0.025928 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_031.png
+  artifactKey: Guid(f0612170fa4472c45bcb39e616ce8bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_031.png using Guid(f0612170fa4472c45bcb39e616ce8bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c7cd4d959a2c56d6b40f46467d84192b') in 0.195415 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_048.png
+  artifactKey: Guid(856af8406e26aae4eb18b4f6ccbff602) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_048.png using Guid(856af8406e26aae4eb18b4f6ccbff602) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8ae49f7c2bf0bf25df7f81b9fb27fb14') in 0.170727 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_034.png
+  artifactKey: Guid(d4f3af8f3e0fee34896fbf2ff90c5aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_034.png using Guid(d4f3af8f3e0fee34896fbf2ff90c5aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '38e10ec5196185fe7362c90a01483bc8') in 0.018498 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_021.png
+  artifactKey: Guid(a6c65c783db4da1489dc9176bc8afc92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_021.png using Guid(a6c65c783db4da1489dc9176bc8afc92) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '785b04bff5bc6e347b58b6ef69f48b84') in 0.160324 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_011.png
+  artifactKey: Guid(42dbaa026413a8b4c9ce21132318dd8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_011.png using Guid(42dbaa026413a8b4c9ce21132318dd8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a0ae95601f7b0eaaa577383d8f9df264') in 0.017156 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_046.png
+  artifactKey: Guid(8464d3cc4d1e06545a6b6be01f05e628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_046.png using Guid(8464d3cc4d1e06545a6b6be01f05e628) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '5b8cca0a0ba3fbffaacb1c325d161fbe') in 0.022302 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_039.png
+  artifactKey: Guid(8112831af6d14c0439900772285a6f0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_039.png using Guid(8112831af6d14c0439900772285a6f0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '4eec80ffc684dfa718761ae045f68138') in 0.018173 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_041.png
+  artifactKey: Guid(d297712e5ec35484483bdcf382e05e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_041.png using Guid(d297712e5ec35484483bdcf382e05e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7ce151b342a9a9a46c4242aaa0874c50') in 0.020092 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_026.png
+  artifactKey: Guid(be37ef62a554ceb4da5af5ff252a37de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_026.png using Guid(be37ef62a554ceb4da5af5ff252a37de) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c416a5220976c0222756f7d2ade97817') in 0.021648 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_007.png
+  artifactKey: Guid(93edbf77d4cadcf45ad0e24b5cae713c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_007.png using Guid(93edbf77d4cadcf45ad0e24b5cae713c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7f3adbe1361b575ac8b637d878618464') in 0.020617 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_051.png
+  artifactKey: Guid(5dbfb253fddab014ca178920c28a0ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_051.png using Guid(5dbfb253fddab014ca178920c28a0ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '82bfc2b44b843c5866a17bbe4372a173') in 0.022225 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_030.png
+  artifactKey: Guid(98eaf5bcd65681a43bb0288e0352dd18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_030.png using Guid(98eaf5bcd65681a43bb0288e0352dd18) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c21c828f11908f1abe1d1a5360e12dc0') in 0.096842 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_006.png
+  artifactKey: Guid(1a2812d05f072ee4caefe05d535055e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_006.png using Guid(1a2812d05f072ee4caefe05d535055e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a522977da1a6a87de7a2cea8e008cb1c') in 0.159364 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.920245 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_002.png
+  artifactKey: Guid(84ab5eaa36b6bb846a186fa6089d086c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_002.png using Guid(84ab5eaa36b6bb846a186fa6089d086c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6abf10a30d3eb31b4ec2e7b458e3e6ea') in 1.889446 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_027.png
+  artifactKey: Guid(7122b9a0c2ad97c4e970f47dc84018a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_027.png using Guid(7122b9a0c2ad97c4e970f47dc84018a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'bb708b73b85f068658f859a323463356') in 0.971369 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_025.png
+  artifactKey: Guid(be4f0918540c82b4a95829d677ebcb01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_025.png using Guid(be4f0918540c82b4a95829d677ebcb01) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '19d040e70e530fbc90504120b9b4a16e') in 0.691695 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_034.png
+  artifactKey: Guid(393e9e9a02766504fbcace5f2f5a60f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_034.png using Guid(393e9e9a02766504fbcace5f2f5a60f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '94b4d60dde594e27c0c3522e6aed23fb') in 0.545038 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_035.png
+  artifactKey: Guid(8ec7475141ddebb4f89133e5aaacf126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_035.png using Guid(8ec7475141ddebb4f89133e5aaacf126) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8fdd16e148d4a64a11daf58b742cfcec') in 0.222662 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_019.png
+  artifactKey: Guid(2a61ee45f3aa82649879580be7bec433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_019.png using Guid(2a61ee45f3aa82649879580be7bec433) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1f980243c4abef142dbf92815bbc2a78') in 0.528008 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_016.png
+  artifactKey: Guid(55d5dc81aa2e5e04aa85e1d39ee60479) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_016.png using Guid(55d5dc81aa2e5e04aa85e1d39ee60479) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f58662bb40d400c33d62f19f2ae689a1') in 0.504790 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_044.png
+  artifactKey: Guid(5da8ced2ae4e96541b2e7662f8eff20c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_044.png using Guid(5da8ced2ae4e96541b2e7662f8eff20c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c2449eac77061429b29c9506a68fb36f') in 0.279020 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_017.png
+  artifactKey: Guid(85210407cf866514ea9e2cd703ae5e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_017.png using Guid(85210407cf866514ea9e2cd703ae5e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'db3f16e1e49c0b94b47dab3f4e978a38') in 0.202786 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_058.png
+  artifactKey: Guid(e174cc601d2a22a44b7e60c5e78528bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_058.png using Guid(e174cc601d2a22a44b7e60c5e78528bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '195860bd83aa0ccbdd23901608e02b5c') in 0.017605 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_037.png
+  artifactKey: Guid(6141cee600b1f4a4681974e2eba20b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_037.png using Guid(6141cee600b1f4a4681974e2eba20b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f6fd1750df5d156c8e84c82ad7741dc1') in 0.250395 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_009.png
+  artifactKey: Guid(11a655bfa96dd5f4293aee74038eb4e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_009.png using Guid(11a655bfa96dd5f4293aee74038eb4e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b74e52935a27e403a20b478ce4d899fe') in 0.388557 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_039.png
+  artifactKey: Guid(8980694a62265e148afe27780165a94c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_039.png using Guid(8980694a62265e148afe27780165a94c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6a7e6c35948ef829dae01829fb47cbb5') in 0.425682 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_033.png
+  artifactKey: Guid(cc60d0e800555794490f1fefb6f72543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_033.png using Guid(cc60d0e800555794490f1fefb6f72543) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ce5a94a82d177edcf754f061bc706fe8') in 0.320001 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_028.png
+  artifactKey: Guid(9bd69b5764383d14b97421055b7ec123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_028.png using Guid(9bd69b5764383d14b97421055b7ec123) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a2b09b6393a0c608313e37d6231e4704') in 0.575943 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_013.png
+  artifactKey: Guid(5879734fa2ad1ba41a5e05c046a4c73c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_013.png using Guid(5879734fa2ad1ba41a5e05c046a4c73c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1451e8ecb74370e8a971f795c67474ba') in 0.303516 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_038.png
+  artifactKey: Guid(6a8a47e15982121429b2f8699d3a05e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_038.png using Guid(6a8a47e15982121429b2f8699d3a05e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a6e1a11373c053480edfb70d11b695c4') in 0.343509 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_030.png
+  artifactKey: Guid(7d7e0e2f28d62954892584c915d4aba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_030.png using Guid(7d7e0e2f28d62954892584c915d4aba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '15397d7ff65025cbf01cad7345cf8f62') in 0.350388 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_015.png
+  artifactKey: Guid(1b13097db36fbff44b19406fd2865ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_015.png using Guid(1b13097db36fbff44b19406fd2865ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd6af57ea263f5c2dafe3da69ea8c0e13') in 0.570315 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_060.png
+  artifactKey: Guid(5b3ab5bf4b88d7a4bb981fb9f9e52fe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_060.png using Guid(5b3ab5bf4b88d7a4bb981fb9f9e52fe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7fcb7bb1ef628d471ebc9058214314c1') in 0.013287 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_010.png
+  artifactKey: Guid(126dcc6b6328a584c99f9852d9ec892d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_010.png using Guid(126dcc6b6328a584c99f9852d9ec892d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1d6604b29e071102919ab74772414730') in 0.289373 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_041.png
+  artifactKey: Guid(af1d4c393d63e6e4d83f82623a9ffa6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_041.png using Guid(af1d4c393d63e6e4d83f82623a9ffa6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd8b48b24b99e2d1d219486617b308475') in 0.302208 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_032.png
+  artifactKey: Guid(4a1daa095d166a742bce6e44dbcc1deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_032.png using Guid(4a1daa095d166a742bce6e44dbcc1deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '63241bf067045de2c162d8efbf68794f') in 0.017195 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_024.png
+  artifactKey: Guid(1ceb153f5ed382e44bd5af2129b947a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_024.png using Guid(1ceb153f5ed382e44bd5af2129b947a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6c145fe65ca1a39f006751e595679546') in 0.213128 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_008.png
+  artifactKey: Guid(51ad8fb573942ac4b9352a228d84424e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_008.png using Guid(51ad8fb573942ac4b9352a228d84424e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f51f5dbd23e9d91aa89aedeccadc19a7') in 0.209248 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_036.png
+  artifactKey: Guid(86bb47f9ba8f7004e9c0c6dcda0d2d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_036.png using Guid(86bb47f9ba8f7004e9c0c6dcda0d2d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd66a4aa7c40cba8174bdbb82d0125fd4') in 0.092218 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_053.png
+  artifactKey: Guid(fb91b5ee45a972e40a477514c1867a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_053.png using Guid(fb91b5ee45a972e40a477514c1867a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '4ec1bc93b1a8f24b3d1543848a2515e0') in 0.107413 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_056.png
+  artifactKey: Guid(d0e45136f749d774ebb2d89618727f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_056.png using Guid(d0e45136f749d774ebb2d89618727f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e89fa3399184fbbcd4e45e49f21a6ea8') in 0.030234 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 57.326157 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_001.png
+  artifactKey: Guid(13384766c173b9442ad46b44930dde7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_001.png using Guid(13384766c173b9442ad46b44930dde7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e25ccbbe67345b4f9660c213074d9b55') in 0.125010 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_023.png
+  artifactKey: Guid(115d509099f281c40bc665f63c3a0615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_023.png using Guid(115d509099f281c40bc665f63c3a0615) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '104ce402eb3127b77eedad571980d29c') in 0.113388 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_032.png
+  artifactKey: Guid(d733c4b3f2a880b429ece4e26ad1e368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_032.png using Guid(d733c4b3f2a880b429ece4e26ad1e368) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c768a975438a3f8dfb4ef202a1e10a19') in 0.062071 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_047.png
+  artifactKey: Guid(e53afe7c2df60ff4c9ca4c432180efad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_047.png using Guid(e53afe7c2df60ff4c9ca4c432180efad) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '30cd655e67108e21e73e04a3ae72cd1a') in 0.036273 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_018.png
+  artifactKey: Guid(4ab42a8877825664a84ba186cddd9889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_018.png using Guid(4ab42a8877825664a84ba186cddd9889) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c9302e6417287988f4fd08e921f651ce') in 0.019948 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_008.png
+  artifactKey: Guid(a33337ddb1fb93f43ba1851be1ba93f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_008.png using Guid(a33337ddb1fb93f43ba1851be1ba93f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ae5f702566b62827f515bf4805a23a6e') in 0.022920 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_015.png
+  artifactKey: Guid(d007609ebd31efb41b3c3dfacf607391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_015.png using Guid(d007609ebd31efb41b3c3dfacf607391) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '634ae952a0ecf31b8ec5bd85abe17234') in 0.555887 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_027.png
+  artifactKey: Guid(00d7e06c3db0637438b5d77e77f26442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_027.png using Guid(00d7e06c3db0637438b5d77e77f26442) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8c1b112a63cb42ffd70216ad4d3cd947') in 0.240183 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_022.png
+  artifactKey: Guid(ecbc63aff4eee5145b5723ac0c10d18e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_022.png using Guid(ecbc63aff4eee5145b5723ac0c10d18e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ad777ec490880690fde9e2dcc1aaa9c3') in 0.097997 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_019.png
+  artifactKey: Guid(fab3329d642217445acf093d086592c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_019.png using Guid(fab3329d642217445acf093d086592c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '59a49d9af9fe66bb6e01004cc4b834c6') in 0.155038 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_043.png
+  artifactKey: Guid(58eb0a38ebac4ae4ca5d5e4d5dde4a45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_043.png using Guid(58eb0a38ebac4ae4ca5d5e4d5dde4a45) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6d5755488b912207a03c1bcb3085b58c') in 0.136887 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_016.png
+  artifactKey: Guid(0adf8c42acf677749941e093592f1567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_016.png using Guid(0adf8c42acf677749941e093592f1567) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '02c2b5dbc475411aa481d65df6ed7232') in 0.124127 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_013.png
+  artifactKey: Guid(ee51cbdd1a1062b40a45b65f62acbc04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_013.png using Guid(ee51cbdd1a1062b40a45b65f62acbc04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ff21a184da777d5309634f2b55911b2d') in 0.076132 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_002.png
+  artifactKey: Guid(0eb58f53979dd3343a2a5c63c40c82bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_002.png using Guid(0eb58f53979dd3343a2a5c63c40c82bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8aa62b8e5909cdafe2b0724e4a3b5274') in 0.042827 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_040.png
+  artifactKey: Guid(e3c4b970c312c8d439fe777919fd07a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_040.png using Guid(e3c4b970c312c8d439fe777919fd07a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '319db59d1c64abdda85d2c00b390e6b3') in 0.246958 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_034.png
+  artifactKey: Guid(d4f3af8f3e0fee34896fbf2ff90c5aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_034.png using Guid(d4f3af8f3e0fee34896fbf2ff90c5aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '955b5eb378c2681f8e5125b9bf5f92ea') in 0.130243 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_014.png
+  artifactKey: Guid(6254ca0b198fca943b404eed2b7b886e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_014.png using Guid(6254ca0b198fca943b404eed2b7b886e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f1a324bf9939c9afc33dc675940c4331') in 0.023988 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_011.png
+  artifactKey: Guid(42dbaa026413a8b4c9ce21132318dd8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_011.png using Guid(42dbaa026413a8b4c9ce21132318dd8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '93f6111432110bf91ba7e73e5dd31c6b') in 0.022690 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_003.png
+  artifactKey: Guid(53ec8a58c4a11bc4a9e3416afe85f39d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_003.png using Guid(53ec8a58c4a11bc4a9e3416afe85f39d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1dd77f9b9b96184f3a2f61586eaa472d') in 0.020689 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_039.png
+  artifactKey: Guid(8112831af6d14c0439900772285a6f0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_039.png using Guid(8112831af6d14c0439900772285a6f0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '21a903fa8ed7b23a4187bf11e54c99dc') in 0.020366 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_038.png
+  artifactKey: Guid(cec588283e811f44e8b787dbc5d55871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_038.png using Guid(cec588283e811f44e8b787dbc5d55871) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '88f5f7631d2757b07751dc3ecc2778df') in 0.017975 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_020.png
+  artifactKey: Guid(849ebfacfb4e67843bde2b074e2da50d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_020.png using Guid(849ebfacfb4e67843bde2b074e2da50d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1f69c8a26eaf373209d70a7688909b59') in 0.018982 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_017.png
+  artifactKey: Guid(9c3fbf53144d956489994bd34e4d02af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_017.png using Guid(9c3fbf53144d956489994bd34e4d02af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6a918797f0db12fa9fbfa616b8efad5f') in 0.018673 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_051.png
+  artifactKey: Guid(5dbfb253fddab014ca178920c28a0ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_051.png using Guid(5dbfb253fddab014ca178920c28a0ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1f5a0fd0803375bcd8e241605b39002e') in 0.018483 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_030.png
+  artifactKey: Guid(98eaf5bcd65681a43bb0288e0352dd18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_030.png using Guid(98eaf5bcd65681a43bb0288e0352dd18) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '41d57ada05b53ca02d66294b7e6bce17') in 0.020456 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_006.png
+  artifactKey: Guid(1a2812d05f072ee4caefe05d535055e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_006.png using Guid(1a2812d05f072ee4caefe05d535055e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '08d25f4bf202126a2c4c2cdc568b661e') in 0.016158 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 33.942072 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_014.png
+  artifactKey: Guid(0a75259b965b7814d86609d134bd16a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_014.png using Guid(0a75259b965b7814d86609d134bd16a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '83d67e08a5eba7429a0582776c35d1c4') in 0.484572 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_027.png
+  artifactKey: Guid(7122b9a0c2ad97c4e970f47dc84018a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_027.png using Guid(7122b9a0c2ad97c4e970f47dc84018a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '84ebbe7b91582532d07f7d216b567c78') in 0.088208 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_034.png
+  artifactKey: Guid(393e9e9a02766504fbcace5f2f5a60f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_034.png using Guid(393e9e9a02766504fbcace5f2f5a60f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a63f61d066497d9f037bcd27c85d1ad9') in 0.202780 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_019.png
+  artifactKey: Guid(2a61ee45f3aa82649879580be7bec433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_019.png using Guid(2a61ee45f3aa82649879580be7bec433) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '5663024e09ec521a2751860ab4a47db8') in 0.167685 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_016.png
+  artifactKey: Guid(55d5dc81aa2e5e04aa85e1d39ee60479) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_016.png using Guid(55d5dc81aa2e5e04aa85e1d39ee60479) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8796923953fc36e260045475524fba08') in 0.182678 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_017.png
+  artifactKey: Guid(85210407cf866514ea9e2cd703ae5e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_017.png using Guid(85210407cf866514ea9e2cd703ae5e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6aeba86adc49fa41ff52791d57f73c5a') in 0.018659 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_040.png
+  artifactKey: Guid(f6360776c66c6ed419ac03a94d5432a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_040.png using Guid(f6360776c66c6ed419ac03a94d5432a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f34ff8175882ef0946c246dd69389f29') in 0.127264 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_043.png
+  artifactKey: Guid(8a510b95ba1eea141b5b9dec135d125a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_043.png using Guid(8a510b95ba1eea141b5b9dec135d125a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f20afea0fb99bb2c3bac48e803773c9c') in 0.152801 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_028.png
+  artifactKey: Guid(9bd69b5764383d14b97421055b7ec123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_028.png using Guid(9bd69b5764383d14b97421055b7ec123) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0a3a7435fb8e630de01938d84a6efe5d') in 0.019734 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_038.png
+  artifactKey: Guid(6a8a47e15982121429b2f8699d3a05e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_038.png using Guid(6a8a47e15982121429b2f8699d3a05e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6ddc8c1eee52b2cb79fda31bd8103d74') in 0.249051 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_030.png
+  artifactKey: Guid(7d7e0e2f28d62954892584c915d4aba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_030.png using Guid(7d7e0e2f28d62954892584c915d4aba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7135257ba38083e273ebbfd59dba0fdd') in 0.043144 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_015.png
+  artifactKey: Guid(1b13097db36fbff44b19406fd2865ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_015.png using Guid(1b13097db36fbff44b19406fd2865ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '36afd39f97e6a945bd8c6452173fc558') in 0.022226 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_041.png
+  artifactKey: Guid(af1d4c393d63e6e4d83f82623a9ffa6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_041.png using Guid(af1d4c393d63e6e4d83f82623a9ffa6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c30ed83fe66ab48dc3750c778afbdad7') in 0.088418 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_032.png
+  artifactKey: Guid(4a1daa095d166a742bce6e44dbcc1deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_032.png using Guid(4a1daa095d166a742bce6e44dbcc1deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a94384d93a15afb46c9b1730e7163742') in 0.138627 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_024.png
+  artifactKey: Guid(1ceb153f5ed382e44bd5af2129b947a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_024.png using Guid(1ceb153f5ed382e44bd5af2129b947a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '290485f929f6f582650f16b73b281b0c') in 0.022843 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_022.png
+  artifactKey: Guid(10ab7c74a9cc99f43b529cb4a242fb82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_022.png using Guid(10ab7c74a9cc99f43b529cb4a242fb82) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3fe2fb0ca6a4e674b08abe41512efea6') in 0.018823 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.505744 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_054.png
+  artifactKey: Guid(cb5f8abd6d5d31e4cba2ac5386879fff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_054.png using Guid(cb5f8abd6d5d31e4cba2ac5386879fff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f45c41ca4e233b11d6f952519aa57b97') in 0.024256 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_057.png
+  artifactKey: Guid(8a50bdb3a4b8b1e448745b0d94012e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_057.png using Guid(8a50bdb3a4b8b1e448745b0d94012e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '81be386399bb890b2a46b8f16c9ddf27') in 0.026110 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_062.png
+  artifactKey: Guid(8975e3014a201ef4d818b0ecafde48a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_062.png using Guid(8975e3014a201ef4d818b0ecafde48a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'da1f332d9650706369c0659af89aa34e') in 0.020798 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_055.png
+  artifactKey: Guid(2fd23a986ace2994c86a7791011f1be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_055.png using Guid(2fd23a986ace2994c86a7791011f1be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c55dbc11a7265d4b2dde2cf87f3615f9') in 0.024051 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/foliagePack_061.png
+  artifactKey: Guid(58770239f2191814a9ab32b851b23323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/foliagePack_061.png using Guid(58770239f2191814a9ab32b851b23323) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'cef859b7836cfc15a048400959cb7f37') in 0.018786 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1546.035888 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_002.png
+  artifactKey: Guid(84ab5eaa36b6bb846a186fa6089d086c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_002.png using Guid(84ab5eaa36b6bb846a186fa6089d086c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'da3b705eb54be6abc566e8809e0d913e') in 0.155974 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.267388 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_010.png
+  artifactKey: Guid(126dcc6b6328a584c99f9852d9ec892d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_010.png using Guid(126dcc6b6328a584c99f9852d9ec892d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'acbbc5b7f419e7539873bb8164c6e4da') in 0.027728 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_013.png
+  artifactKey: Guid(5879734fa2ad1ba41a5e05c046a4c73c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/KenneyArt/FoliagePack/Leaves/foliagePack_leaves_013.png using Guid(5879734fa2ad1ba41a5e05c046a4c73c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '51d230b9522ea5d598ccdae0b8750a03') in 0.032329 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.998 seconds
+Refreshing native plugins compatible for Editor in 16.74 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  6.826 seconds
+Domain Reload Profiling: 8822ms
+	BeginReloadAssembly (657ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (50ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (301ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (1221ms)
+		LoadAssemblies (1360ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (53ms)
+			TypeCache.Refresh (26ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (13ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (6827ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (590ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (114ms)
+			ProcessInitializeOnLoadAttributes (397ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Refreshing native plugins compatible for Editor in 61.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3210 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (31.6 KB). Loaded Objects now: 3752.
+Memory consumption went from 124.8 MB to 124.7 MB.
+Total: 5.283300 ms (FindLiveObjects: 0.454200 ms CreateObjectMapping: 0.343300 ms MarkObjects: 4.388400 ms  DeleteObjects: 0.096300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.950 seconds
+Refreshing native plugins compatible for Editor in 3.44 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  9.100 seconds
+Domain Reload Profiling: 11049ms
+	BeginReloadAssembly (288ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (69ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (1561ms)
+		LoadAssemblies (1701ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (31ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (8ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (9101ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (411ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (70ms)
+			ProcessInitializeOnLoadAttributes (294ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 4.33 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3211 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (31.6 KB). Loaded Objects now: 3755.
+Memory consumption went from 125.0 MB to 125.0 MB.
+Total: 3.508100 ms (FindLiveObjects: 0.305500 ms CreateObjectMapping: 0.226900 ms MarkObjects: 2.913600 ms  DeleteObjects: 0.060500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 443.425652 seconds.
+  path: Assets/_Scripts/Editor/SpriteBillboardEditTime.cs
+  artifactKey: Guid(392bc2e74e1029a43b17bbd521c51f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Scripts/Editor/SpriteBillboardEditTime.cs using Guid(392bc2e74e1029a43b17bbd521c51f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b1bfffd99bcc1e9011518d682c43f231') in 0.008991 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0

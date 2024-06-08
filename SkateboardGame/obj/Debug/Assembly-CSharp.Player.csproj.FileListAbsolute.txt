@@ -1,0 +1,6 @@
+D:\GameplayFirstSkateboardGame\SkateboardGame\Temp\bin\Debug\Player\Assembly-CSharp.dll
+D:\GameplayFirstSkateboardGame\SkateboardGame\Temp\bin\Debug\Player\Assembly-CSharp.pdb
+D:\GameplayFirstSkateboardGame\SkateboardGame\obj\Debug\Assembly-CSharp.Player.csprojAssemblyReference.cache
+D:\GameplayFirstSkateboardGame\SkateboardGame\obj\Debug\Assembly-CSharp.Player.csproj.CoreCompileInputs.cache
+D:\GameplayFirstSkateboardGame\SkateboardGame\obj\Debug\Assembly-CSharp.dll
+D:\GameplayFirstSkateboardGame\SkateboardGame\obj\Debug\Assembly-CSharp.pdb
