@@ -8,8 +8,8 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody rb;
 
     // public bool isPlaying = true;
-    public float forwardForce = 20f;
-    public float turnSpeed = 50f;
+    public float forwardForce = 10f;
+    public float turnSpeed = 75f;
     public float forwardInput;
     public float sidewaysInput;
 

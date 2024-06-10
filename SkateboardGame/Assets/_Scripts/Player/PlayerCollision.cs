@@ -12,7 +12,7 @@ public class PlayerCollision : MonoBehaviour
         
         // stopping player control of movement when a collidable is hit
         if (collisionInfo.collider.tag == "Collidable") {
-            movement.enabled =  false;
+            // movement.enabled =  false;
         }
     }
 
