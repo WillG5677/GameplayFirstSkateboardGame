@@ -3,13 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Splines;
 
-[RequireComponent(typeof(SplineContainer))]
 public class GrindEdge : MonoBehaviour
 {
-    private Spline thisSpline;
+    public Vector3 attachPosition;
+    public Vector3 approachVector = new Vector3(1, 0, 0);
+    public float approachAngleRange = 60f;
+
+    public SplineContainer GrindSpline => grindSpline;
+
+    private SplineContainer grindSpline;
 
     private void Awake()
     {
-        thisSpline = GetComponent<SplineContainer>().Spline;
+        grindSpline = GetComponentInParent<SplineContainer>();
+        if (grindSpline == null)
+        {
+            Debug.LogError($"{nameof(GrindEdge)} on {gameObject} is not a child of a spline - destroying self");
+            Destroy(gameObject);
+        }
     }
 }
