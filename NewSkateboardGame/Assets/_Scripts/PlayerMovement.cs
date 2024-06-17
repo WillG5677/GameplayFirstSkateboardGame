@@ -1,59 +1,131 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using Unity.VisualScripting;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovementTutorial : MonoBehaviour
 {
+    [Header("Setup")]
+    [SerializeField] private GameInput gameInput;
+    Rigidbody rb;
 
-    // public Rigidbody rb;
 
-    // public bool isPlaying = true;
-    public float forwardForce = 10f;
-    public float turnSpeed = 75f;
-    public float forwardInput;
-    public float sidewaysInput;
+    [Header("Movement")]
 
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private float BASE_MOVE_SPEED = 10f;
+    [SerializeField] private float MOVE_SPEED = 7f;
+
+    [SerializeField] private float GROUND_DRAG = 5f;
+
+    [SerializeField] private float JUMP_FORCE = 12f;
+    [SerializeField] private float JUMP_COOLDOWN = .25f;
+    [SerializeField] private float AIR_MULTIPLIER = .4f;
+    bool readyToJump;
+
+    [HideInInspector] [SerializeField] private float walkSpeed;
+    [HideInInspector] [SerializeField] private float sprintSpeed;
+
+
+    [Header("Ground Check")]
+    [SerializeField] private float playerHeight;
+    [SerializeField] private LayerMask whatIsGround;
+    bool grounded;
+
+    [SerializeField] private Transform orientation;
+
+    [SerializeField] private float horizontalInput;
+    [SerializeField] private float verticalInput;
+
+    [SerializeField] private Vector3 moveDirection;
+
+
+
+    private void Start()
     {
+        rb = GetComponent<Rigidbody>();
+        rb.freezeRotation = true;
+
+        readyToJump = true;
+    }
+
+    private void Update()
+    {
+        // ground check
+        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f, whatIsGround);
+
+        MyInput();
+        SpeedControl();
+
+        // handle drag
+        if (grounded) {
+            rb.drag = GROUND_DRAG;
+            rb.angularDrag = 1;
+        }
+        else {
+            rb.drag = 0;
+            rb.angularDrag = 5;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        MovePlayer();
+    }
+
+    private void MyInput()
+    {
+        horizontalInput = gameInput.GetRotationInput();
+        verticalInput = gameInput.GetForwardInput();
+
+        // when to jump
+        if(gameInput.JumpInput() && readyToJump && grounded)
+        {
+            readyToJump = false;
+
+            Jump();
+
+            Invoke(nameof(ResetJump), JUMP_COOLDOWN);
+        }
+    }
+
+    private void MovePlayer()
+    {
+        // turn
+        rb.AddTorque(rb.transform.up * horizontalInput * 200f * Time.deltaTime, ForceMode.Acceleration);
+
+        // move forward
+        // on ground
+        if(grounded)
+            rb.AddForce(rb.transform.forward * MOVE_SPEED * BASE_MOVE_SPEED, ForceMode.Force);
+
+        // in air
+        else if(!grounded)
+            rb.AddForce(rb.transform.forward * MOVE_SPEED * BASE_MOVE_SPEED * AIR_MULTIPLIER, ForceMode.Force);
 
     }
-    void Update() {
-        // read values from keyboard and store in computer
-        forwardInput = Input.GetAxis("Vertical");
-        sidewaysInput = Input.GetAxis("Horizontal");
+
+    private void SpeedControl()
+    {
+        Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+
+        // limit velocity if needed
+        if(flatVel.magnitude > MOVE_SPEED)
+        {
+            Vector3 limitedVel = flatVel.normalized * MOVE_SPEED;
+            rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
+        }
     }
 
-    // Update is called once per frame, used for physics processes
-    void FixedUpdate()
+    private void Jump()
     {
-        // add a consistent forward force when game is started
-        // if ( isPlaying ) {
-            transform.Translate(Vector3.forward * forwardForce * Time.deltaTime);
-        // }
+        // reset y velocity
+        rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
-        transform.Translate(Vector3.forward * forwardInput * Time.deltaTime);
-        transform.Rotate(Vector3.up * sidewaysInput * turnSpeed * Time.deltaTime);
-
-
-        // // player inputs
-        // if ( Input.GetKey("a") ) {
-        //     rb.AddForce(-inputForce * Time.deltaTime, 0, 0);
-        // }
-        // if ( Input.GetKey("d") ) {
-        //     rb.AddForce(inputForce * Time.deltaTime, 0, 0);
-        // }
-        // // w can speed up player and s can slow down player
-        // if ( Input.GetKey("w") ) {
-        //     rb.AddForce(0, 0, inputForce * Time.deltaTime);
-        // }
-        // // s is not slowing down the player
-        // if ( Input.GetKey("s") ) {
-        //     rb.AddForce(0, 0, -inputForce * Time.deltaTime);
-        // }
-        // // jump
-        // if ( Input.GetKey(" ") ) {
-        //     rb.AddForce(0, jumpForce * Time.deltaTime, 0);
-        // }
+        rb.AddForce(transform.up * JUMP_FORCE, ForceMode.Impulse);
+    }
+    private void ResetJump()
+    {
+        readyToJump = true;
     }
 }
