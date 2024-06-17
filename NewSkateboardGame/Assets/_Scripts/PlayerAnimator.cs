@@ -7,8 +7,6 @@ public class PlayerAnimator : MonoBehaviour
     // this should match the name of the walking animation bool in the animator in the unity editor
     private const string IS_WALKING = "IsWalking";
 
-
-    [SerializeField] private PlayerMovement player;
     private Animator animator;
 
     private void Awake() {
