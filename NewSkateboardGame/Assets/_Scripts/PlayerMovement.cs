@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using Unity.VisualScripting;
 
-public class PlayerMovementTutorial : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     [Header("Setup")]
     [SerializeField] private GameInput gameInput;
