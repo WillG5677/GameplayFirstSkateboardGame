@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Unity.VisualScripting;
+using Unity.PlasticSCM.Editor.WebApi;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -12,15 +13,17 @@ public class PlayerMovement : MonoBehaviour
 
 
     [Header("Movement")]
-
-    [SerializeField] private float BASE_MOVE_SPEED = 10f;
-    [SerializeField] private float MOVE_SPEED = 7f;
+    private float currentSpeed;
+    [SerializeField] private float BASE_MOVE_SPEED = 50f;
+    // [SerializeField] private float ACCELERATION = 7f;
+    [SerializeField] private float MAX_SPEED = 20f;
 
     [SerializeField] private float GROUND_DRAG = 5f;
 
     [SerializeField] private float JUMP_FORCE = 12f;
     [SerializeField] private float JUMP_COOLDOWN = .25f;
     [SerializeField] private float AIR_MULTIPLIER = .4f;
+    [SerializeField] private float ROTATION_FORCE = 200f;
     bool readyToJump;
 
     [HideInInspector] [SerializeField] private float walkSpeed;
@@ -32,10 +35,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask whatIsGround;
     bool grounded;
 
-    [SerializeField] private Transform orientation;
-
-    [SerializeField] private float horizontalInput;
-    [SerializeField] private float verticalInput;
+    [SerializeField] private float rotationInput;
+    [SerializeField] private float forwardInput;
 
     [SerializeField] private Vector3 moveDirection;
 
@@ -75,8 +76,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void MyInput()
     {
-        horizontalInput = gameInput.GetRotationInput();
-        verticalInput = gameInput.GetForwardInput();
+        rotationInput = gameInput.GetRotationInput();
+        forwardInput = gameInput.GetForwardInput();
 
         // when to jump
         if(gameInput.JumpInput() && readyToJump && grounded)
@@ -92,17 +93,17 @@ public class PlayerMovement : MonoBehaviour
     private void MovePlayer()
     {
         // turn
-        rb.AddTorque(rb.transform.up * horizontalInput * 200f * Time.deltaTime, ForceMode.Acceleration);
+        rb.AddTorque(rb.transform.up * -rotationInput * ROTATION_FORCE * Time.deltaTime, ForceMode.Acceleration);
 
         // move forward
         // on ground
         if(grounded)
-            rb.AddForce(rb.transform.forward * MOVE_SPEED * BASE_MOVE_SPEED, ForceMode.Force);
+            rb.AddForce(rb.transform.right * BASE_MOVE_SPEED, ForceMode.Force);
 
         // in air
         else if(!grounded)
-            rb.AddForce(rb.transform.forward * MOVE_SPEED * BASE_MOVE_SPEED * AIR_MULTIPLIER, ForceMode.Force);
-
+            rb.AddForce(rb.transform.right * BASE_MOVE_SPEED * AIR_MULTIPLIER, ForceMode.Force);
+        
     }
 
     private void SpeedControl()
@@ -110,9 +111,9 @@ public class PlayerMovement : MonoBehaviour
         Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
         // limit velocity if needed
-        if(flatVel.magnitude > MOVE_SPEED)
+        if(flatVel.magnitude > MAX_SPEED)
         {
-            Vector3 limitedVel = flatVel.normalized * MOVE_SPEED;
+            Vector3 limitedVel = flatVel.normalized * MAX_SPEED;
             rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
         }
     }
@@ -127,5 +128,15 @@ public class PlayerMovement : MonoBehaviour
     private void ResetJump()
     {
         readyToJump = true;
+    }
+
+    public float GetSpeed() {
+        float speed = rb.velocity.magnitude;
+        Debug.Log("Current Speed: " + speed);
+        return speed;
+    }
+
+    public void BoostPlayer() {
+        // TODO: when player steps on puddle, etc that boosts player speed. Timeout for when player can get above max speed
     }
 }
