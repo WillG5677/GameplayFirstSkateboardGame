@@ -6,14 +6,14 @@ public class GameInput : MonoBehaviour
 {
 
 
-    public float GetRotationInput() {
+    public float GetForwardInput() {
         // not sure if this should be .GetAxis vs .GetAxisRaw
         float rotationInput = Input.GetAxisRaw("Horizontal");
 
         return rotationInput;
     }
 
-    public float GetForwardInput() {
+    public float GetRotationInput() {
         float forwardInput = Input.GetAxisRaw("Vertical");
 
         return forwardInput;
