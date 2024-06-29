@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 8878758258234799076}
   - component: {fileID: 1501044539538214541}
   - component: {fileID: 989141674089945308}
+  - component: {fileID: 8219547568346715959}
+  - component: {fileID: 426160477644999671}
   m_Layer: 0
   m_Name: ClothesRack
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117,3 +119,37 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7ce3024898eb46b4a8ed73667d82017b, type: 3}
   explosionForce: 1.5
   explosionRadius: 1
+--- !u!114 &8219547568346715959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7200520213777572081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60e5e32a62ae40e41b66a34728e84e3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  billboardMode: 2
+--- !u!65 &426160477644999671
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7200520213777572081}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.299999, y: 8.992582, z: 7}
+  m_Center: {x: 0, y: 0, z: 0}

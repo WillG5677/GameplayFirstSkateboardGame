@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 246130460254046384}
   - component: {fileID: 2836442054943438353}
   - component: {fileID: 479987620920416095}
+  - component: {fileID: -1604447952830086713}
+  - component: {fileID: 7660255704286657957}
   m_Layer: 0
   m_Name: PinkSeat
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117,3 +119,37 @@ MonoBehaviour:
   - {fileID: 21300000, guid: facbfe6e3f4e057459717b2487789fc0, type: 3}
   explosionForce: 1.5
   explosionRadius: 1
+--- !u!114 &-1604447952830086713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5936244591178004033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60e5e32a62ae40e41b66a34728e84e3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  billboardMode: 2
+--- !u!65 &7660255704286657957
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5936244591178004033}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6.3899994, y: 4.591318, z: 7}
+  m_Center: {x: 0, y: 0, z: 0}
