@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6648183022269951742}
   - component: {fileID: 7078101185990395831}
   - component: {fileID: 4540918269575353627}
+  - component: {fileID: -5251345544185186977}
   m_Layer: 0
   m_Name: Bench
   m_TagString: Destructable
@@ -131,3 +132,24 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f7db0cad2b327f44bbd5f7e3a15e2848, type: 3}
   explosionForce: 1.5
   explosionRadius: 1
+--- !u!65 &-5251345544185186977
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3909011162586156845}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 16.31, y: 9.522735, z: 7}
+  m_Center: {x: 0, y: 0, z: 0}
