@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("Setup")]
     [SerializeField] private GameInput gameInput;
+    [SerializeField] private Animator animator;
     Rigidbody rb;
 
 
@@ -23,7 +24,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float JUMP_FORCE = 12f;
     [SerializeField] private float JUMP_COOLDOWN = .25f;
     [SerializeField] private float AIR_MULTIPLIER = .4f;
-    [SerializeField] private float ROTATION_FORCE = 200f;
+    [SerializeField] private float ROTATION_FORCE = 300f;
+    [SerializeField] private float FORWARD_FORCE = .3f;
     bool readyToJump;
 
     [HideInInspector] [SerializeField] private float walkSpeed;
@@ -52,6 +54,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        // animation
+        animator.SetFloat("Speed", GetSpeed());
+        animator.SetBool("isJumping", !grounded);
+
         // ground check
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f, whatIsGround);
 
@@ -85,6 +91,7 @@ public class PlayerMovement : MonoBehaviour
             readyToJump = false;
 
             Jump();
+            // animator.SetBool("isJumping", true);
 
             Invoke(nameof(ResetJump), JUMP_COOLDOWN);
         }
@@ -103,6 +110,9 @@ public class PlayerMovement : MonoBehaviour
         // in air
         else if(!grounded)
             rb.AddForce(rb.transform.right * BASE_MOVE_SPEED * AIR_MULTIPLIER, ForceMode.Force);
+
+        // add forward force
+            rb.AddForce(rb.transform.right * BASE_MOVE_SPEED * forwardInput * FORWARD_FORCE, ForceMode.Force);
         
     }
 
@@ -132,7 +142,6 @@ public class PlayerMovement : MonoBehaviour
 
     public float GetSpeed() {
         float speed = rb.velocity.magnitude;
-        Debug.Log("Current Speed: " + speed);
         return speed;
     }
 
