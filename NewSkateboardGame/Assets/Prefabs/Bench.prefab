@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3909011162586156845
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 624836103206206739}
+  - component: {fileID: 6648183022269951742}
+  - component: {fileID: 7078101185990395831}
+  - component: {fileID: 4540918269575353627}
+  m_Layer: 0
+  m_Name: Bench
+  m_TagString: Destructable
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &624836103206206739
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3909011162586156845}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &6648183022269951742
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3909011162586156845}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -809313042, guid: 50ea44b7066646540ba89ecf7ad38ac8, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 16.31, y: 9.522735}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &7078101185990395831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3909011162586156845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60e5e32a62ae40e41b66a34728e84e3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  billboardMode: 2
+--- !u!114 &4540918269575353627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3909011162586156845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04efbbd1c4598b64d88d5e82c816d3ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  splitSprites:
+  - {fileID: 21300000, guid: 3211702c6c007024a9fa6cda03002ad7, type: 3}
+  - {fileID: 21300000, guid: 0e58d1a00981962419d2d4b6bee575c5, type: 3}
+  - {fileID: 21300000, guid: 70f3d7034f7f6284892ab82504664693, type: 3}
+  - {fileID: 21300000, guid: d5427de16f8d0964ea073f001e77c77e, type: 3}
+  - {fileID: 21300000, guid: 6033fe802566a274b895ec45919cfe38, type: 3}
+  - {fileID: 21300000, guid: bb40d6d2c9554a149bfda8bd2b0c1804, type: 3}
+  - {fileID: 21300000, guid: 0e6cf2c086470e341b81d2992e8a0a6a, type: 3}
+  - {fileID: 21300000, guid: 8acbb6148cb5bfe4dae587db54e88952, type: 3}
+  - {fileID: 21300000, guid: b5955e325a2d01a4e8a8b46cb41aff19, type: 3}
+  - {fileID: 21300000, guid: 8862825768e5d5f42aeced9dfd6b20d6, type: 3}
+  - {fileID: 21300000, guid: 78749a7dbb81e054988a054bdc3e07f9, type: 3}
+  - {fileID: 21300000, guid: a9b1ba20f05bcf24c943365f3d2504d2, type: 3}
+  - {fileID: 21300000, guid: 331f2a1abfe1f5c45b12bfd66e236a9a, type: 3}
+  - {fileID: 21300000, guid: ce5dc45488f49bc44a298475cbc41002, type: 3}
+  - {fileID: 21300000, guid: 95fcaed722821a44787998caa08b42bd, type: 3}
+  - {fileID: 21300000, guid: 74b7cba07f2e12346abaa3f66a52edff, type: 3}
+  - {fileID: 21300000, guid: f7db0cad2b327f44bbd5f7e3a15e2848, type: 3}
+  explosionForce: 1.5
+  explosionRadius: 1

@@ -470,6 +470,7 @@ MonoBehaviour:
   JUMP_COOLDOWN: 0.25
   AIR_MULTIPLIER: 0.4
   ROTATION_FORCE: 200
+  FORWARD_FORCE: 0.3
   walkSpeed: 0
   sprintSpeed: 0
   playerHeight: 2
@@ -491,5 +492,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 202ff841c31a4b346b302e7138ebafc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerMovement: {fileID: 0}
   CHAOS_INCREMENT_AMOUNT: 10
   breakingSound: {fileID: 0}

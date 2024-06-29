@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4969764322472641596}
   - component: {fileID: 5300311446707740402}
   - component: {fileID: 3944296101566812967}
+  - component: {fileID: 1464565522573956860}
   m_Layer: 0
   m_Name: TreePot
   m_TagString: Destructable
@@ -141,3 +142,16 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 04199858ac64b2e49972a6dd02e61f7e, type: 3}
   explosionForce: 1.5
   explosionRadius: 1
+--- !u!114 &1464565522573956860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4033634846228658241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60e5e32a62ae40e41b66a34728e84e3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  billboardMode: 2
