@@ -7,11 +7,11 @@ using UnityEngine.SceneManagement;
 public class MainMenuController : MonoBehaviour
 {
     [SerializeField]
-    private string gameplaySceneName = string.Empty;
+    private Canvas mainMenuCanvas;
 
     public void PlayGame()
     {
-        SceneManager.LoadScene(gameplaySceneName);
+        mainMenuCanvas.gameObject.SetActive(false);
     }
 
     public void QuitGame()
