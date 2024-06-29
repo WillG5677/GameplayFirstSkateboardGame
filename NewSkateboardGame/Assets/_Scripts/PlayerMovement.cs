@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using Unity.VisualScripting;
 using Unity.PlasticSCM.Editor.WebApi;
+using UnityEditor.Rendering;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Movement")]
     private float currentSpeed;
+    private bool canMove = true;
     [SerializeField] private float BASE_MOVE_SPEED = 200f;
     // [SerializeField] private float ACCELERATION = 7f;
     [SerializeField] private float MAX_SPEED = 50f;
@@ -77,7 +79,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        MovePlayer();
+        if (canMove) {
+            MovePlayer();
+        }
     }
 
     private void MyInput()
@@ -147,5 +151,11 @@ public class PlayerMovement : MonoBehaviour
 
     public void BoostPlayer() {
         // TODO: when player steps on puddle, etc that boosts player speed. Timeout for when player can get above max speed
+    }
+
+    public IEnumerator DisableMovement(float seconds) {
+        canMove = false;
+        yield return new WaitForSeconds(seconds);
+        canMove = true;
     }
 }

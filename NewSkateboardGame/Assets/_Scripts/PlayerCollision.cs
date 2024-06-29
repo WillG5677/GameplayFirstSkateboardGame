@@ -5,12 +5,14 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
+    [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private float CHAOS_INCREMENT_AMOUNT = 10f;
     [SerializeField] private AudioClip breakingSound;
     void OnCollisionEnter (Collision collisionInfo) {
 
         if (collisionInfo.collider.tag == "Wall") {
             // timeout player movement
+            StartCoroutine(playerMovement.DisableMovement(1f));
         }
 
         else if (collisionInfo.collider.tag == "Destructable") {
