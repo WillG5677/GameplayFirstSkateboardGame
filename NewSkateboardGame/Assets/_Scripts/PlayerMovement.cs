@@ -15,9 +15,9 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Movement")]
     private float currentSpeed;
-    [SerializeField] private float BASE_MOVE_SPEED = 50f;
+    [SerializeField] private float BASE_MOVE_SPEED = 200f;
     // [SerializeField] private float ACCELERATION = 7f;
-    [SerializeField] private float MAX_SPEED = 20f;
+    [SerializeField] private float MAX_SPEED = 50f;
 
     [SerializeField] private float GROUND_DRAG = 5f;
 
