@@ -26,6 +26,7 @@ public class SpriteExplosion : MonoBehaviour
         foreach (Sprite sprite in splitSprites)
         {
             GameObject go = new GameObject(sprite.name);
+            go.layer = 12;
             go.transform.localScale = new Vector3(1f, 1f, 1f);
             go.transform.SetPositionAndRotation(transform.position, Random.rotation);
             go.AddComponent<SpriteRenderer>().sprite = sprite;
