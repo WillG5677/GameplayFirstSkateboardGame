@@ -2,7 +2,11 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
-/[Ll]ibrary/
+/[Ll]ibrary/**
+!/Library/PackageCache
+!/Library/PackageCache/com.unity.splines@2.6.1
+!/Library/PackageCache/com.unity.splines@2.6.1/Runtime
+!/Library/PackageCache/com.unity.splines@2.6.1/Runtime/SplineAnimate.cs
 /[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/
