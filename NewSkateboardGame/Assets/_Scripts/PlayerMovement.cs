@@ -106,22 +106,19 @@ public class PlayerMovement : MonoBehaviour
         rotationInput = gameInput.GetRotationInput();
         forwardInput = gameInput.GetForwardInput();
 
+        if (gameInput.GrindInput() && bestGrindEdge != null)
+        {
+            Grind();
+        }
         // when to jump
-        if(gameInput.JumpInput() && readyToJump && grounded)
+        else if(gameInput.JumpInput() && readyToJump && grounded)
         {
             readyToJump = false;
 
-            if (bestGrindEdge == null)
-            {
-                Jump();
-                // animator.SetBool("isJumping", true);
+            Jump();
+            // animator.SetBool("isJumping", true);
 
-                Invoke(nameof(ResetJump), JUMP_COOLDOWN);
-            }
-            else
-            {
-                Grind();
-            }
+            Invoke(nameof(ResetJump), JUMP_COOLDOWN);
         }
     }
 
@@ -197,7 +194,7 @@ public class PlayerMovement : MonoBehaviour
         splineAnimator.Container = null;
         // Teleport rigidbody to new position
         rb.position = transform.position;
-        rb.rotation = transform.rotation;
+        rb.rotation = transform.rotation * Quaternion.Euler(0f, -90f, 0f);
     }
 
     public float GetSpeed() {

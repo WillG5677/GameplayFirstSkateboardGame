@@ -23,4 +23,8 @@ public class GameInput : MonoBehaviour
         return Input.GetKey(KeyCode.Space);
     }
 
+    public bool GrindInput()
+    {
+        return Input.GetKeyDown(KeyCode.F);
+    }
 }
