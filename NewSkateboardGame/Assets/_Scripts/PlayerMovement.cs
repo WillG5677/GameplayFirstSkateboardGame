@@ -61,8 +61,9 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         // animation
-        animator.SetFloat("Speed", GetSpeed());
+        animator.SetBool("isGrinding", isGrinding);
         animator.SetBool("isJumping", !grounded);
+        animator.SetFloat("Speed", GetSpeed());
 
         if (isGrinding)
         {
@@ -97,14 +98,15 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         if (canMove) {
-            MovePlayer();
+        MovePlayer();
         }
     }
 
     private void MyInput()
     {
-        rotationInput = gameInput.GetRotationInput();
-        forwardInput = gameInput.GetForwardInput();
+        if (canMove) {
+            rotationInput = gameInput.GetRotationInput();
+            forwardInput = gameInput.GetForwardInput();
 
         if (gameInput.GrindInput() && bestGrindEdge != null)
         {
@@ -115,10 +117,11 @@ public class PlayerMovement : MonoBehaviour
         {
             readyToJump = false;
 
-            Jump();
-            // animator.SetBool("isJumping", true);
+                Jump();
+                // animator.SetBool("isJumping", true);
 
-            Invoke(nameof(ResetJump), JUMP_COOLDOWN);
+                Invoke(nameof(ResetJump), JUMP_COOLDOWN);
+            }
         }
     }
 
@@ -279,6 +282,7 @@ public class PlayerMovement : MonoBehaviour
     public IEnumerator DisableMovement(float seconds) {
         canMove = false;
         yield return new WaitForSeconds(seconds);
+
         canMove = true;
     }
 }

@@ -17,7 +17,7 @@ public class ChaosMeterUI : MonoBehaviour
 
         // Initialize the Slider
         chaosMeter.minValue = 0f;
-        chaosMeter.maxValue = 100f;
+        chaosMeter.maxValue = chaosManager.MAX_CHAOS;
 
         if (chaosValueText != null) {
             chaosValueText.text = "Chaos: " + chaosManager.chaos.ToString("F1");

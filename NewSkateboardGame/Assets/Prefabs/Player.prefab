@@ -201,7 +201,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7552645520154254810}
@@ -306,7 +306,7 @@ Transform:
   m_GameObject: {fileID: 8353122054593121645}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.4, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -493,8 +493,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 202ff841c31a4b346b302e7138ebafc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMovement: {fileID: 0}
+  playerMovement: {fileID: 6838423542785155184}
+  rb: {fileID: 4010344860774428813}
   CHAOS_INCREMENT_AMOUNT: 10
+  DISABLED_MOVEMENT_TIME: 0
+  BOUNCE_MULTIPLIER: 2
   breakingSound: {fileID: 0}
 --- !u!114 &3894038615846385576
 MonoBehaviour:

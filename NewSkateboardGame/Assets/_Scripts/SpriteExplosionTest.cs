@@ -27,7 +27,7 @@ public class SpriteExplosion : MonoBehaviour
         {
             GameObject go = new GameObject(sprite.name);
             go.layer = 12;
-            go.transform.localScale = new Vector3(1f, 1f, 1f);
+            go.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
             go.transform.SetPositionAndRotation(transform.position, Random.rotation);
             go.AddComponent<SpriteRenderer>().sprite = sprite;
             go.AddComponent<Rigidbody>().AddExplosionForce(explosionForce, transform.position, explosionRadius);

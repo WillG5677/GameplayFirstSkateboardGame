@@ -7,6 +7,8 @@ public class ChaosManager : MonoBehaviour
     public static ChaosManager Instance { get; private set; }
     public float chaos = 0f;
 
+    public float MAX_CHAOS = 100f;
+
 
     [Header("Sound")]
     [SerializeField] private AudioClip music1;

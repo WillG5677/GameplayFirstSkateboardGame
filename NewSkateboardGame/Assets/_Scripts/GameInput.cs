@@ -20,11 +20,11 @@ public class GameInput : MonoBehaviour
     }
 
     public bool JumpInput() {
-        return Input.GetKey(KeyCode.Space);
+        return Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.Joystick1Button14);
     }
 
     public bool GrindInput()
     {
-        return Input.GetKeyDown(KeyCode.F);
+        return Input.GetKeyDown(KeyCode.F) || Input.GetKey(KeyCode.Joystick1Button13);
     }
 }
