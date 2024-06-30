@@ -1,11 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
-using Unity.VisualScripting;
-using Unity.PlasticSCM.Editor.WebApi;
-using UnityEditor.Rendering;
+using UnityEngine.Splines;
 
+[RequireComponent(typeof(SplineAnimate))]
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Setup")]
@@ -44,10 +42,16 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private Vector3 moveDirection;
 
-
+    [SerializeField]
+    private GameObject grindPrompt;
+    private SplineAnimate splineAnimator;
+    private readonly List<KeyValuePair<GrindEdge, Collider>> nearbyGrindEdges = new List<KeyValuePair<GrindEdge, Collider>>();
+    private bool isGrinding = false;
+    private GrindEdge bestGrindEdge;
 
     private void Start()
     {
+        splineAnimator = GetComponent<SplineAnimate>();
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
 
@@ -59,6 +63,19 @@ public class PlayerMovement : MonoBehaviour
         // animation
         animator.SetFloat("Speed", GetSpeed());
         animator.SetBool("isJumping", !grounded);
+
+        if (isGrinding)
+        {
+            if (splineAnimator.NormalizedTime >= 0.98f)
+            {
+                EndGrind();
+            }
+        }
+        else
+        {
+            bestGrindEdge = GetBestGrindEdge();
+            grindPrompt.SetActive(bestGrindEdge != null);
+        }
 
         // ground check
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f, whatIsGround);
@@ -94,10 +111,17 @@ public class PlayerMovement : MonoBehaviour
         {
             readyToJump = false;
 
-            Jump();
-            // animator.SetBool("isJumping", true);
+            if (bestGrindEdge == null)
+            {
+                Jump();
+                // animator.SetBool("isJumping", true);
 
-            Invoke(nameof(ResetJump), JUMP_COOLDOWN);
+                Invoke(nameof(ResetJump), JUMP_COOLDOWN);
+            }
+            else
+            {
+                Grind();
+            }
         }
     }
 
@@ -144,6 +168,38 @@ public class PlayerMovement : MonoBehaviour
         readyToJump = true;
     }
 
+    private void Grind()
+    {
+        if (bestGrindEdge == null)
+        {
+            return;
+        }
+
+        grindPrompt.SetActive(false);
+        isGrinding = true;
+        canMove = false;
+        splineAnimator.Container = bestGrindEdge.GrindSpline;
+        splineAnimator.Loop = bestGrindEdge.reverseSpline ? SplineAnimate.LoopMode.ReverseOnce : SplineAnimate.LoopMode.Once;
+        //splineAnimator.MaxSpeed = Mathf.Max(10f, GetSpeed());
+        splineAnimator.Play();
+    }
+
+    private void EndGrind()
+    {
+        if (!isGrinding)
+        {
+            return;
+        }
+
+        isGrinding = false;
+        canMove = true;
+        readyToJump = true;
+        splineAnimator.Container = null;
+        // Teleport rigidbody to new position
+        rb.position = transform.position;
+        rb.rotation = transform.rotation;
+    }
+
     public float GetSpeed() {
         float speed = rb.velocity.magnitude;
         return speed;
@@ -151,6 +207,76 @@ public class PlayerMovement : MonoBehaviour
 
     public void BoostPlayer() {
         // TODO: when player steps on puddle, etc that boosts player speed. Timeout for when player can get above max speed
+    }
+
+    private GrindEdge GetBestGrindEdge()
+    {
+        GrindEdge bestGrindEdge = null;
+        if (nearbyGrindEdges.Count == 0)
+        {
+            return bestGrindEdge;
+        }
+
+        float smallestAngle = float.MaxValue;
+        foreach (KeyValuePair<GrindEdge, Collider> nearbyGrindEdge in nearbyGrindEdges)
+        {
+            float rightAlignAngle = Vector3.Angle(transform.right,
+                Quaternion.Euler(0f, nearbyGrindEdge.Key.approachAngleRange / 2f, 0f) * nearbyGrindEdge.Key.approachVector);
+            Vector3 cross = Vector3.Cross(transform.right,
+                Quaternion.Euler(0f, nearbyGrindEdge.Key.approachAngleRange / 2f, 0f) * nearbyGrindEdge.Key.approachVector);
+            if (cross.y < 0f)
+            {
+                rightAlignAngle *= -1f;
+            }
+
+            float leftAlignAngle = Vector3.Angle(transform.right,
+                Quaternion.Euler(0f, -nearbyGrindEdge.Key.approachAngleRange / 2f, 0f) * nearbyGrindEdge.Key.approachVector);
+            cross = Vector3.Cross(transform.right,
+                Quaternion.Euler(0f, -nearbyGrindEdge.Key.approachAngleRange / 2f, 0f) * nearbyGrindEdge.Key.approachVector);
+            if (cross.y < 0f)
+            {
+                leftAlignAngle *= -1f;
+            }
+
+            float faceAngle = Vector3.Angle(transform.right, (nearbyGrindEdge.Key.attachPosition - transform.position).normalized);
+            bool angleGood = faceAngle >= Mathf.Min(leftAlignAngle, rightAlignAngle) &&
+                faceAngle <= Mathf.Max(leftAlignAngle, rightAlignAngle) &&
+                faceAngle <= nearbyGrindEdge.Key.approachAngleRange / 2f;
+
+            if (!angleGood)
+            {
+                continue;
+            }
+
+            if (faceAngle < smallestAngle)
+            {
+                smallestAngle = faceAngle;
+                bestGrindEdge = nearbyGrindEdge.Key;
+            }
+        }
+        return bestGrindEdge;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        GrindEdge grindEdge = other.GetComponent<GrindEdge>();
+        if (grindEdge == null)
+        {
+            return;
+        }
+
+        nearbyGrindEdges.Add(new KeyValuePair<GrindEdge, Collider>(grindEdge, other));
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        GrindEdge grindEdge = other.GetComponent<GrindEdge>();
+        if (grindEdge == null)
+        {
+            return;
+        }
+
+        nearbyGrindEdges.Remove(new KeyValuePair<GrindEdge, Collider>(grindEdge, other));
     }
 
     public IEnumerator DisableMovement(float seconds) {
