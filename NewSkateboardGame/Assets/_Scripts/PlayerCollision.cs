@@ -17,19 +17,19 @@ public class PlayerCollision : MonoBehaviour
     [SerializeField] private float BOUNCE_MULTIPLIER;
     // Stop force controls how much the player gets launched from the wall, higher value is less launch
     [SerializeField] private float STOP_FORCE;
-    [SerializeField] private float ROTATION_ANGLE;
     [SerializeField] private AudioClip breakingSound;
 
     private SpriteExplosion spriteExplosion;
     void OnCollisionEnter (Collision collisionInfo) {
 
         if (collisionInfo.collider.tag == "Wall") {
-            float randomY = ROTATION_ANGLE*Random.Range(1,4);
+            float randomY = Random.Range(0, 360);
             Vector3 currentVelocity = rb.velocity;
             Vector3 oppositeDirection = -currentVelocity.normalized;
             Vector3 launchForce = oppositeDirection * currentVelocity.magnitude*BOUNCE_MULTIPLIER;
-            rb.AddForce(launchForce, ForceMode.Impulse);
+            rb.AddForce(launchForce * BOUNCE_MULTIPLIER, ForceMode.Impulse);
             Quaternion randomRotation = Quaternion.Euler(0f, randomY, 0f);
+            // rb.AddForce(Vector3.right*BOUNCE_MULTIPLIER, ForceMode.Impulse);
 
             StartCoroutine(RotateTo(randomRotation));
 
@@ -53,11 +53,11 @@ public class PlayerCollision : MonoBehaviour
         Quaternion initialRotation = transform.rotation;
         float elapsed = 0f;
 
-        while (elapsed < 1.5f)
+        while (elapsed < DISABLED_MOVEMENT_TIME)
         {
             transform.rotation = Quaternion.Slerp(initialRotation, targetRotation, elapsed);
             elapsed += Time.deltaTime * STOP_FORCE / 360f;
-            rb.AddForce(Vector3.right*BOUNCE_MULTIPLIER, ForceMode.Impulse);
+
             yield return null;
         }
 
