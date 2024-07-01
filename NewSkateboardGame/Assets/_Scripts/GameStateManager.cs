@@ -4,6 +4,7 @@ using System.Collections;
 using UnityEditor;
 #endif
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameStateManager : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class GameStateManager : MonoBehaviour
     private TimerWrapper gameplayTimer;
 
     private bool gamePaused;
+    [SerializeField] private string winSceneName = string.Empty;
 
     public void RestartGameSession()
     {
@@ -116,6 +118,10 @@ public class GameStateManager : MonoBehaviour
         if (!gamePaused && Input.GetKeyDown(KeyCode.Escape))
         {
             PauseGameSession();
+        }
+
+        if (ChaosManager.Instance.chaos == ChaosManager.Instance.MAX_CHAOS) {
+            SceneManager.LoadScene(winSceneName);
         }
     }
 

@@ -12,7 +12,7 @@ public class PlayerCollision : MonoBehaviour
 {
     [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private Rigidbody rb;
-    [SerializeField] private float CHAOS_INCREMENT_AMOUNT = 10f;
+    [SerializeField] private float CHAOS_INCREMENT_AMOUNT = 1f;
     [SerializeField] private float DISABLED_MOVEMENT_TIME;
     [SerializeField] private float BOUNCE_MULTIPLIER;
     // Stop force controls how much the player gets launched from the wall, higher value is less launch
