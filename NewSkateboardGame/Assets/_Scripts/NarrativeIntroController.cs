@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -122,6 +123,6 @@ public class NarrativeIntroController : MonoBehaviour
     private class PanelTimingInfo
     {
         public GameObject panel;
-        public float displayDuration = 3f;
+        public float displayDuration = 10f;
     }
 }
