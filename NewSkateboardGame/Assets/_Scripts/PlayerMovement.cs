@@ -64,6 +64,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("isGrinding", isGrinding);
         animator.SetBool("isJumping", !grounded);
         animator.SetFloat("Speed", GetSpeed());
+        animator.SetBool("canMove", canMove);
 
         if (isGrinding)
         {
