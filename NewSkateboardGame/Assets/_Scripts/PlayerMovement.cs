@@ -49,6 +49,8 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrinding = false;
     private GrindEdge bestGrindEdge;
 
+    private bool falling = false;
+
     private void Start()
     {
         splineAnimator = GetComponent<SplineAnimate>();
@@ -64,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("isGrinding", isGrinding);
         animator.SetBool("isJumping", !grounded);
         animator.SetFloat("Speed", GetSpeed());
-        animator.SetBool("canMove", canMove);
+        animator.SetBool("falling", falling);
 
         if (isGrinding)
         {
@@ -282,8 +284,10 @@ public class PlayerMovement : MonoBehaviour
 
     public IEnumerator DisableMovement(float seconds) {
         canMove = false;
+        falling = true;
         yield return new WaitForSeconds(seconds);
 
         canMove = true;
+        falling = false;
     }
 }
