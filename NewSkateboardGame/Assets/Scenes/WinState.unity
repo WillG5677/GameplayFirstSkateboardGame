@@ -1647,9 +1647,9 @@ MonoBehaviour:
   flipsText: {fileID: 282096276}
   panelTimings:
   - panel: {fileID: 1581266710}
-    displayDuration: 3
+    displayDuration: 4
   - panel: {fileID: 740447545}
-    displayDuration: 3
+    displayDuration: 4
   - panel: {fileID: 1543309142}
     displayDuration: 3
   - panel: {fileID: 2144441084}

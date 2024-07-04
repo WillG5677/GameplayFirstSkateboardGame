@@ -1082,11 +1082,11 @@ MonoBehaviour:
   pauseMenu: {fileID: 271878318}
   panelTimings:
   - panel: {fileID: 917536484}
-    displayDuration: 3
+    displayDuration: 4
   - panel: {fileID: 506271131}
-    displayDuration: 3
+    displayDuration: 4
   - panel: {fileID: 1976554747}
-    displayDuration: 3
+    displayDuration: 4
   - panel: {fileID: 513102741}
     displayDuration: 3
   - panel: {fileID: 1604248935}
@@ -1102,13 +1102,13 @@ MonoBehaviour:
   - panel: {fileID: 1661481436}
     displayDuration: 3
   - panel: {fileID: 1763757285}
-    displayDuration: 3
+    displayDuration: 4
   - panel: {fileID: 856024231}
     displayDuration: 3
   - panel: {fileID: 1412969784}
     displayDuration: 3
   - panel: {fileID: 917883635}
-    displayDuration: 3
+    displayDuration: 4
   - panel: {fileID: 195085449}
     displayDuration: 3
   - panel: {fileID: 714421848}
@@ -1120,15 +1120,15 @@ MonoBehaviour:
   - panel: {fileID: 41612173}
     displayDuration: 3
   - panel: {fileID: 207801854}
-    displayDuration: 3
+    displayDuration: 4
   - panel: {fileID: 1563651331}
-    displayDuration: 3
+    displayDuration: 4
   - panel: {fileID: 632115833}
     displayDuration: 3
   - panel: {fileID: 385945270}
-    displayDuration: 3
+    displayDuration: 4
   - panel: {fileID: 1837522721}
-    displayDuration: 3
+    displayDuration: 4
   gameplaySceneName: Mall
 --- !u!4 &259045985
 Transform:
